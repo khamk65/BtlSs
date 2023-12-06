@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="bottom">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="Wellcome to EditImage Handmade"/>
+    <ImageView
+        android:id="@+id/IViewCamera"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="#000">
+        <ImageButton
+            android:id="@+id/btn_crop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#000"
+            android:src="@drawable/baseline_crop_24" />
+
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#000"
+            android:src="@drawable/camera_alt_24"/>
+    </LinearLayout>
+</LinearLayout>
